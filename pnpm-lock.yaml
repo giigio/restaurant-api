@@ -17,6 +17,9 @@ importers:
       sqlite3:
         specifier: 5.1.7
         version: 5.1.7
+      zod:
+        specifier: ^4.0.0
+        version: 4.0.0
     devDependencies:
       '@types/express':
         specifier: ^5.0.3
@@ -1039,6 +1042,9 @@ packages:
 
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+
+  zod@4.0.0:
+    resolution: {integrity: sha512-9diLdTPc/L7w/5jI4C3gHYNiGHDV9IZYxo1e5LSD8cabi65WVTWWb+g2BGPEpUUCOxR4D+6O5B0AzyMdUAXwrw==}
 
 snapshots:
 
@@ -2134,3 +2140,5 @@ snapshots:
   wrappy@1.0.2: {}
 
   yallist@4.0.0: {}
+
+  zod@4.0.0: {}
