@@ -1,0 +1,420 @@
+{
+  "name": "API Restaurant",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "Products",
+      "filename": "Products",
+      "seq": 2,
+      "root": {
+        "meta": {
+          "name": "Products",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "CREATE",
+          "filename": "CREATE.bru",
+          "seq": 2,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"name\": \"Executivo de frango grelhado\",\n  \"price\": 70\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "DELETE",
+          "filename": "DELETE.bru",
+          "seq": 4,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}/2",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "LIST",
+          "filename": "LIST.bru",
+          "seq": 1,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}",
+            "method": "GET",
+            "headers": [],
+            "params": [
+              {
+                "name": "name",
+                "value": "batata",
+                "type": "query",
+                "enabled": false
+              }
+            ],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "UPDATE",
+          "filename": "UPDATE.bru",
+          "seq": 3,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}/2",
+            "method": "PUT",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"name\": \"Hambúrguer Vegetariano\",\n  \"price\": 45.30\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Sessions",
+      "filename": "Sessions",
+      "seq": 3,
+      "root": {
+        "meta": {
+          "name": "Sessions",
+          "seq": 3
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "CREATE",
+          "filename": "CREATE.bru",
+          "seq": 2,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"table_id\": 1\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "LIST",
+          "filename": "LIST.bru",
+          "seq": 1,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "UPDATE",
+          "filename": "UPDATE.bru",
+          "seq": 5,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}/2",
+            "method": "PUT",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Tables",
+      "filename": "Tables",
+      "seq": 2,
+      "root": {
+        "meta": {
+          "name": "Tables",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "LIST",
+          "filename": "LIST.bru",
+          "seq": 5,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Orders",
+      "filename": "Orders",
+      "seq": 4,
+      "root": {
+        "request": {
+          "vars": {
+            "req": [
+              {
+                "uid": "FKKjEQdMwdG0zyPq0qSwC",
+                "name": "RESOURCE",
+                "value": "orders",
+                "enabled": true
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Orders",
+          "seq": 4
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "CREATE",
+          "filename": "CREATE.bru",
+          "seq": 5,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"table_session_id\": 1,\n  \"product_id\": 16,\n  \"quantity\": 1\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "LIST",
+          "filename": "LIST.bru",
+          "seq": 2,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}/table-session/1",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "SHOW TOTAL",
+          "filename": "SHOW TOTAL.bru",
+          "seq": 3,
+          "request": {
+            "url": "{{BASE_URL}}/{{RESOURCE}}/table-session/1/total",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "activeEnvironmentUid": "o4ZMzt30e4x27stIMf9GG",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "BASE_URL",
+          "value": "http://localhost:3333",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "RESOURCE",
+          "value": "products",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "Dev"
+    }
+  ],
+  "root": {
+    "request": {
+      "vars": {
+        "req": [
+          {
+            "name": "RESOURCE",
+            "value": "products",
+            "enabled": true,
+            "local": false,
+            "uid": "4ugNcFDUIRhE86Yzjurxn"
+          }
+        ]
+      }
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "API Restaurant",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.0013990402221679688,
+    "filesCount": 13
+  }
+}
